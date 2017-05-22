@@ -1,0 +1,190 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    height:100%;
+}
+html{
+    height: 100%;
+}
+header img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+header {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    background-color: #b7e5e0;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+.textAtBottom h1 {
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    margin-top: 50px;
+    color: darkred;
+    margin-bottom: 20px;
+}
+.textAtBottom h3 {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Pacifico', cursive;*/
+    line-height: .7em;
+    margin-top: 0;
+    /*margin-bottom: 0;*/
+}
+.textAtBottom {
+    /*background-color: #F7B32B;*/
+    height:20vh;
+}
+.logos_container{
+    position:relative;
+    height:100%;
+    margin-top: 20px;
+    top: 0;
+    left: 0;
+}
+.main_body {
+    position:relative;
+    /*background-color:#FCF6B1;*/
+    /*top: 3em;*/
+}
+.logos_container img {
+    border: 1px solid black;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+.logos_container img:active {
+    border: 1px solid black;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    transform: translate(-1%, -1%);
+}
+#map{
+    width: 100%;
+    height: 60vh;
+    /*width: 400px;*/
+    /*height: 400px;*/
+    position:relative;
+    margin-top: 7px;
+    border: 1px solid black;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+#bottom_buttons button {
+    width: 80%;
+    height: 10%;
+    margin: 5px 0;
+    position: relative;
+    left: 10%;
+}
+.advertising_video {
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+}
+.blocker{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1000;
+    font-family: 'Roboto', sans-serif;
+    display: none;
+    background-color: white;
+    text-align: center;
+}
+.container_page3 {
+    z-index: 800;
+    background-color: white;
+    height: 100vh;
+    /*width: 100vw;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*modal box*/
+.modal-content {
+    background-color: #337ab7;
+    color:white;
+}
+@media screen and (orientation: landscape) and (max-width: 668px) {
+    .logos_container{
+        margin-top: 10px;
+    }
+    header img {
+        /*width: 60%;*/
+        height: 100%;
+    }
+    .container_page3 {
+        z-index: 800;
+        background-color: white;
+        /*height: 100vh;*/
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    header {
+        display: none;
+    }
+    #map{
+        width: 100%;
+        height: 80vh;
+        position:relative;
+    }
+    div.logos_container {
+        margin-left: 70px;
+    }
+}
+@media screen and (min-width: 500px) and (orientation: portrait) {
+    .blocker{
+        display:inherit;
+    }
+}
+@media screen and (min-width: 668px) and (orientation: landscape) {
+    .blocker{
+        display:inherit;
+    }
+}
+.btn-default,.btn-primary,.btn-success,.btn-info,.btn-warning,.btn-danger {
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    border-radius:0;
+}
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .5;
+}
+#map .btn-default {
+    margin-bottom: 7px;
+}
+#error {
+    font-size: large;
+    text-align: center;
+    color: red;
+    font-variant: small-caps;
+    text-decoration: underline;
+}
